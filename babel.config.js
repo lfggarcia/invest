@@ -22,6 +22,7 @@ module.exports = {
           '@core': './src/core',
           '@features': './src/features',
           '@navigation': './src/core/navigation',
+          '@types': './src/types',
         },
         extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
       },

@@ -1,7 +1,8 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import WatchListScreen from '@features/search/screens/List';
+
+import BottomTabRouter from '@navigation/bottomTab';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +14,7 @@ class Router extends React.Component {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="Home" component={WatchListScreen} />
+          <Stack.Screen name="Root" component={BottomTabRouter} />
         </Stack.Navigator>
       </NavigationContainer>
     );

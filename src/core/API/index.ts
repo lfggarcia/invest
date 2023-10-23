@@ -5,10 +5,13 @@ const instance = axios.create({
   baseURL: API_URL,
 });
 
+instance.defaults.headers.common.Accept = 'application/json';
+instance.defaults.headers.common['Content-Type'] = 'application/json';
+
 instance.interceptors.request.use(config => {
   config.params = {
-    token: API_KEY,
     ...config.params,
+    token: API_KEY,
   };
 
   return config;

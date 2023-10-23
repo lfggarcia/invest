@@ -5,6 +5,7 @@
     "baseUrl": ".",
     "paths": {
       "@core/*": ["./src/core/*"],
+      "@types/*": ["./src/types/*"],
       "@features/*": ["./src/features/*"],
       "@navigation/*": ["./src/core/navigation/*"]
     }
